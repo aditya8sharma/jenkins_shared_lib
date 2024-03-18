@@ -1,3 +1,3 @@
 def call (){
-    sh 'mvn test'
+    sh 'export MAVEN_OPTS="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" & mvn test'
 }
